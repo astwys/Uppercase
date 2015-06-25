@@ -10,3 +10,9 @@ C:\Users\Maximilian\Home\Programming\C#\20150625_Uppercase\20150625_Uppercase\ob
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\bin\Debug\20150625_Uppercase.exe.config
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\20150625_Uppercase.exe
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\20150625_Uppercase.pdb
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\bin\Debug\20150625_Uppercase.exe
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\bin\Debug\20150625_Uppercase.pdb
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\20150625_Uppercase.csprojResolveAssemblyReference.cache
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\_20150625_Uppercase.MainWindow.resources
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\_20150625_Uppercase.Properties.Resources.resources
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\20150625_Uppercase.csproj.GenerateResource.Cache

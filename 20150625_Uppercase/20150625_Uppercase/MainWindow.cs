@@ -18,5 +18,17 @@ namespace _20150625_Uppercase {
         private void Form1_Load(object sender, EventArgs e) {
 
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e) {
+
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e) {
+
+        }
     }
 }
