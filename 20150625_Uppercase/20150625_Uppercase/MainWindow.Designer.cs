@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using System;
 
 namespace _20150625_Uppercase {
 
@@ -33,7 +34,6 @@ namespace _20150625_Uppercase {
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,22 +45,23 @@ namespace _20150625_Uppercase {
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.tabControl_openFiles = new System.Windows.Forms.TabControl();
-            this.ut_welcome = new _20150625_Uppercase.Up_Tab();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.plainTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.javaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.javaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.plainTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tabControl_openFiles = new Up_TabControl();
+            this.ut_welcome = new _20150625_Uppercase.Up_Tab();
             this.menuStrip1.SuspendLayout();
-            this.tabControl_openFiles.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
-            this.toolStripContainer1.SuspendLayout();
+            this.tabControl_openFiles.SuspendLayout();
             this.SuspendLayout();
+
+            //here
+            test1 = new Up_Tab();
+            test1.SuspendLayout();
+
             // 
             // menuStrip1
             // 
@@ -83,7 +84,6 @@ namespace _20150625_Uppercase {
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.toolStripMenuItem1.Text = "File";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // newToolStripMenuItem
             // 
@@ -145,9 +145,60 @@ namespace _20150625_Uppercase {
             this.treeView1.Size = new System.Drawing.Size(284, 384);
             this.treeView1.TabIndex = 5;
             // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cToolStripMenuItem1,
+            this.cToolStripMenuItem,
+            this.javaToolStripMenuItem,
+            this.plainTextToolStripMenuItem});
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(72, 20);
+            this.toolStripDropDownButton1.Text = "Language";
+            // 
+            // cToolStripMenuItem1
+            // 
+            this.cToolStripMenuItem1.Name = "cToolStripMenuItem1";
+            this.cToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
+            this.cToolStripMenuItem1.Text = "C";
+            // 
+            // cToolStripMenuItem
+            // 
+            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.cToolStripMenuItem.Text = "C#";
+            // 
+            // javaToolStripMenuItem
+            // 
+            this.javaToolStripMenuItem.Name = "javaToolStripMenuItem";
+            this.javaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.javaToolStripMenuItem.Text = "Java";
+            // 
+            // plainTextToolStripMenuItem
+            // 
+            this.plainTextToolStripMenuItem.Checked = true;
+            this.plainTextToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.plainTextToolStripMenuItem.Name = "plainTextToolStripMenuItem";
+            this.plainTextToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.plainTextToolStripMenuItem.Text = "Plain Text";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 497);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.statusStrip1.Size = new System.Drawing.Size(1255, 22);
+            this.statusStrip1.TabIndex = 6;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // tabControl_openFiles
             // 
             this.tabControl_openFiles.Controls.Add(this.ut_welcome);
+            this.tabControl_openFiles.Controls.Add(this.test1);
             this.tabControl_openFiles.Location = new System.Drawing.Point(298, 34);
             this.tabControl_openFiles.Name = "tabControl_openFiles";
             this.tabControl_openFiles.SelectedIndex = 0;
@@ -165,88 +216,12 @@ namespace _20150625_Uppercase {
             this.ut_welcome.Text = "Welcome";
             this.ut_welcome.UseVisualStyleBackColor = true;
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripDropDownButton1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 0);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1255, 22);
-            this.statusStrip1.TabIndex = 6;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cToolStripMenuItem1,
-            this.cToolStripMenuItem,
-            this.javaToolStripMenuItem,
-            this.plainTextToolStripMenuItem});
-            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
-            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-            // 
-            // plainTextToolStripMenuItem
-            // 
-            this.plainTextToolStripMenuItem.Name = "plainTextToolStripMenuItem";
-            this.plainTextToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.plainTextToolStripMenuItem.Text = "Plain Text";
-            // 
-            // javaToolStripMenuItem
-            // 
-            this.javaToolStripMenuItem.Name = "javaToolStripMenuItem";
-            this.javaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.javaToolStripMenuItem.Text = "Java";
-            // 
-            // cToolStripMenuItem
-            // 
-            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cToolStripMenuItem.Text = "C#";
-            // 
-            // cToolStripMenuItem1
-            // 
-            this.cToolStripMenuItem1.Name = "cToolStripMenuItem1";
-            this.cToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.cToolStripMenuItem1.Text = "C";
-            // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.BottomToolStripPanel
-            // 
-            this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.statusStrip1);
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1255, 29);
-            this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 468);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(1255, 51);
-            this.toolStripContainer1.TabIndex = 7;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            this.toolStripContainer1.TopToolStripPanelVisible = false;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1255, 519);
-            this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.tabControl_openFiles);
             this.Controls.Add(this.menuStrip1);
@@ -255,20 +230,16 @@ namespace _20150625_Uppercase {
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl_openFiles.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
+            this.tabControl_openFiles.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private TabControl tabControl_openFiles;
+        private Up_TabControl tabControl_openFiles;
         private Up_Tab ut_welcome;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
@@ -281,16 +252,23 @@ namespace _20150625_Uppercase {
         private ToolStripMenuItem saveToolStripMenuItem;
         private ToolStripMenuItem closeToolStripMenuItem;
         private TreeView treeView1;
-        private StatusStrip statusStrip1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripDropDownButton toolStripDropDownButton1;
         private ToolStripMenuItem cToolStripMenuItem1;
         private ToolStripMenuItem cToolStripMenuItem;
         private ToolStripMenuItem javaToolStripMenuItem;
         private ToolStripMenuItem plainTextToolStripMenuItem;
-        private ToolStripContainer toolStripContainer1;
+        private StatusStrip statusStrip1;
+
+        private Up_Tab test1;
+
     }
 
+
+    /**
+    *
+    * the custom tab that automatically is added a RichTextBox and has special properties to be set when creating the object
+    *
+    **/
     public class Up_Tab : TabPage {
 
         //here the file is edited
@@ -363,6 +341,53 @@ namespace _20150625_Uppercase {
             this.tf_file.WordWrap = false;
 
             this.Controls.Add(tf_file);
+        }
+
+    }
+
+    /**
+    *
+    * the custom TabControl so we can hav a ContextMenu that meets our needs
+    *
+    **/
+    public class Up_TabControl : TabControl {
+
+        //right-click menu
+        private ContextMenuStrip CMS;
+
+        //to save the position we initially clicked
+        private Point clickLocation;
+
+        public Up_TabControl() {
+            this.CMS = new ContextMenuStrip();
+            this.CMS.Items.Add("Save", null/*might be replaced with a pic*/, new System.EventHandler(Item_Clicked));
+            this.CMS.Items.Add("Close", null/*might be replaced with a pic*/, new System.EventHandler(Item_Clicked));
+        }
+
+        private void Item_Clicked(object sender, EventArgs e) {
+            if (sender.ToString().Equals("Save")) {
+                //...saving
+            }else if(sender.ToString().Equals("Close")) {
+
+                for (Int16 i = 0; i < this.TabCount; i++) {
+                    Rectangle rect = this.GetTabRect(i);
+
+                    if (rect.Contains(this.PointToClient(clickLocation))) {
+                        this.TabPages.RemoveAt(i);
+                    }
+                }
+
+            }
+        }
+
+        protected override void OnMouseClick(MouseEventArgs e) {
+            base.OnMouseClick(e);
+
+            if (e.Button == MouseButtons.Right) {
+                clickLocation = Cursor.Position;
+                CMS.Show(Cursor.Position);
+            }
+
         }
 
     }
