@@ -17,13 +17,5 @@ namespace _20150625_Uppercase {
 
         }
 
-        private void btn_new_Click(object sender, EventArgs e) {
-            tabControl_openFiles.Controls.Add(new Up_Tab());
-        }
-
-        private void btn_delete_Click(object sender, EventArgs e) {
-
-        }
-
     }
 }

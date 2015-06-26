@@ -109,6 +109,30 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\plus32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\minus32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\home32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\folderplus32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\paperplus32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\paperpencil32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\icons\gear32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
