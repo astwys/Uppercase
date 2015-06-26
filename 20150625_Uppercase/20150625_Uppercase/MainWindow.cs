@@ -14,13 +14,16 @@ namespace _20150625_Uppercase {
         public MainWindow() {
             InitializeComponent();
             this.MinimumSize = new System.Drawing.Size(700, 500);
-                
+
         }
 
-        //private void Form1_Load(object sender, EventArgs e) {
+        private void btn_new_Click(object sender, EventArgs e) {
+            tabControl_openFiles.Controls.Add(new Up_Tab());
+        }
 
-        //}
+        private void btn_delete_Click(object sender, EventArgs e) {
 
+        }
 
     }
 }

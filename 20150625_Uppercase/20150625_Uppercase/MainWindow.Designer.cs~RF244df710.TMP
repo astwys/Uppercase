@@ -34,7 +34,6 @@ namespace _20150625_Uppercase {
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -424,8 +423,6 @@ namespace _20150625_Uppercase {
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button2.FlatAppearance.BorderSize = 0;
@@ -435,7 +432,7 @@ namespace _20150625_Uppercase {
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 46);
             this.button2.TabIndex = 1;
-            this.button2.Text = "";
+            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1

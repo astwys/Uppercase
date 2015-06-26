@@ -16,3 +16,4 @@ C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\2015062
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\_20150625_Uppercase.MainWindow.resources
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\_20150625_Uppercase.Properties.Resources.resources
 C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\obj\Debug\20150625_Uppercase.csproj.GenerateResource.Cache
+C:\Users\Maximilian\Home\Programming\GitHub\Uppercase\20150625_Uppercase\20150625_Uppercase\bin\Debug\Uppercase.exe.config
