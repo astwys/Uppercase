@@ -56,12 +56,8 @@ namespace _20150625_Uppercase {
             this.label_headerTreeView = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button7 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -69,7 +65,7 @@ namespace _20150625_Uppercase {
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.tabControl_openFiles = new _20150625_Uppercase.Up_TabControl();
-            this.test1 = new _20150625_Uppercase.Up_Tab();
+            this.uptab_welcome = new _20150625_Uppercase.Up_Tab();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -83,6 +79,7 @@ namespace _20150625_Uppercase {
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.SlateGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.helpToolStripMenuItem});
@@ -263,9 +260,11 @@ namespace _20150625_Uppercase {
             // 
             // treeView1
             // 
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.treeView1.BackColor = System.Drawing.Color.LightSlateGray;
             this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.treeView1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.treeView1.Location = new System.Drawing.Point(0, 22);
             this.treeView1.Name = "treeView1";
@@ -277,48 +276,27 @@ namespace _20150625_Uppercase {
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.SlateGray;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.button10, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.button9, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.button10, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.button9, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.button4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 27);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(50, 467);
             this.tableLayoutPanel1.TabIndex = 10;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(0, 276);
-            this.button7.Margin = new System.Windows.Forms.Padding(0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 46);
-            this.button7.TabIndex = 10;
-            this.button7.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -331,10 +309,10 @@ namespace _20150625_Uppercase {
             this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(0, 414);
+            this.button10.Location = new System.Drawing.Point(0, 385);
             this.button10.Margin = new System.Windows.Forms.Padding(0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 53);
+            this.button10.Size = new System.Drawing.Size(50, 82);
             this.button10.TabIndex = 9;
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -349,60 +327,12 @@ namespace _20150625_Uppercase {
             this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(0, 368);
+            this.button9.Location = new System.Drawing.Point(0, 308);
             this.button9.Margin = new System.Windows.Forms.Padding(0);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 46);
+            this.button9.Size = new System.Drawing.Size(50, 77);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(0, 322);
-            this.button8.Margin = new System.Windows.Forms.Padding(0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(50, 46);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 230);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(50, 46);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 184);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 46);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -415,10 +345,10 @@ namespace _20150625_Uppercase {
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = global::Uppercase.Properties.Resources.paperpencil32;
-            this.button4.Location = new System.Drawing.Point(0, 138);
+            this.button4.Location = new System.Drawing.Point(0, 231);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 46);
+            this.button4.Size = new System.Drawing.Size(50, 77);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -433,10 +363,10 @@ namespace _20150625_Uppercase {
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::Uppercase.Properties.Resources.paperplus32;
-            this.button3.Location = new System.Drawing.Point(0, 92);
+            this.button3.Location = new System.Drawing.Point(0, 154);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 46);
+            this.button3.Size = new System.Drawing.Size(50, 77);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -451,10 +381,10 @@ namespace _20150625_Uppercase {
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 46);
+            this.button2.Location = new System.Drawing.Point(0, 77);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 46);
+            this.button2.Size = new System.Drawing.Size(50, 77);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -472,40 +402,49 @@ namespace _20150625_Uppercase {
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 46);
+            this.button1.Size = new System.Drawing.Size(50, 77);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackColor = System.Drawing.Color.Transparent;
             this.button11.BackgroundImage = global::Uppercase.Properties.Resources.plus32;
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateGray;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(1213, 27);
+            this.button11.Location = new System.Drawing.Point(1215, 27);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(20, 20);
             this.button11.TabIndex = 1;
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
             this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.BackColor = System.Drawing.Color.Transparent;
             this.button12.BackgroundImage = global::Uppercase.Properties.Resources.minus32;
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateGray;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Location = new System.Drawing.Point(1235, 27);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(20, 20);
             this.button12.TabIndex = 11;
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // tabControl_openFiles
             // 
             this.tabControl_openFiles.AllowDrop = true;
-            this.tabControl_openFiles.Controls.Add(this.test1);
+            this.tabControl_openFiles.Controls.Add(this.uptab_welcome);
             this.tabControl_openFiles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_openFiles.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl_openFiles.Location = new System.Drawing.Point(0, 0);
@@ -518,14 +457,14 @@ namespace _20150625_Uppercase {
             this.tabControl_openFiles.TabIndex = 3;
             this.tabControl_openFiles.TabStop = false;
             // 
-            // test1
+            // uptab_welcome
             // 
-            this.test1.BackColor = System.Drawing.Color.White;
-            this.test1.Location = new System.Drawing.Point(4, 22);
-            this.test1.Name = "test1";
-            this.test1.Size = new System.Drawing.Size(790, 441);
-            this.test1.TabIndex = 1;
-            this.test1.Text = "New file";
+            this.uptab_welcome.Location = new System.Drawing.Point(4, 22);
+            this.uptab_welcome.Name = "uptab_welcome";
+            this.uptab_welcome.Size = new System.Drawing.Size(790, 441);
+            this.uptab_welcome.TabIndex = 0;
+            this.uptab_welcome.Text = "Welcome";
+            this.uptab_welcome.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
@@ -561,6 +500,7 @@ namespace _20150625_Uppercase {
 
         #endregion
         private Up_TabControl tabControl_openFiles;
+        private Up_Tab uptab_welcome;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem helpToolStripMenuItem;
@@ -577,8 +517,6 @@ namespace _20150625_Uppercase {
         private ToolStripMenuItem javaToolStripMenuItem;
         private ToolStripMenuItem plainTextToolStripMenuItem;
         private StatusStrip statusStrip1;
-
-        private Up_Tab test1;
         private SplitContainer splitContainer1;
         private TreeView treeView1;
         private Label label_headerTreeView;
@@ -587,13 +525,9 @@ namespace _20150625_Uppercase {
         private Button button1;
         private Button button10;
         private Button button9;
-        private Button button8;
-        private Button button6;
-        private Button button5;
         private Button button4;
         private Button button3;
         private Button button2;
-        private Button button7;
         private Button button11;
         private Button button12;
     }
@@ -619,6 +553,9 @@ namespace _20150625_Uppercase {
         public Up_Tab(string path) {
             if (path.Equals("Welcome")) {
                 WelcomeTab();
+                return;
+            }else if (path.Equals("Home")) {
+                HomeTab();
                 return;
             }
             //load the file into the new textfield
@@ -658,6 +595,20 @@ namespace _20150625_Uppercase {
             InitialiseCommons();
         }
 
+        //used to initialise the Home tab
+        private void HomeTab() {
+            language = "Plain text";
+            path = "Home";
+            this.Name = path;
+            this.Padding = new Padding(0);
+            this.Size = new Size(937, 358);
+            this.Text = path;
+            this.UseVisualStyleBackColor = false;
+            //...
+            //some stuff that is usefull on a hometab
+            //...
+        }
+
         private void InitialiseCommons() {
 
             //other settings for the tab
@@ -675,6 +626,7 @@ namespace _20150625_Uppercase {
             //this.tf_file.Size = new Size(931, 352);
             this.tf_file.WordWrap = false;
             this.tf_file.BackColor = Color.FromName("LightSlateGray");
+            this.tf_file.Cursor = Cursors.IBeam;
 
             this.Controls.Add(tf_file);
         }

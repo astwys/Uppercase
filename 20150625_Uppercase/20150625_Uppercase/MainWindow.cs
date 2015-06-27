@@ -17,5 +17,22 @@ namespace _20150625_Uppercase {
 
         }
 
+        //add button
+        private void button11_Click(object sender, EventArgs e) {
+            tabControl_openFiles.Controls.Add(new Up_Tab()); //add a new tab
+            tabControl_openFiles.SelectedIndex = tabControl_openFiles.Controls.Count - 1; //focus the added tab
+        }
+
+        //delete button
+        private void button12_Click(object sender, EventArgs e) {
+            tabControl_openFiles.Controls.RemoveAt(tabControl_openFiles.SelectedIndex);
+        }
+
+        //home button
+        private void button1_Click(object sender, EventArgs e) {
+            tabControl_openFiles.Controls.Add(new Up_Tab("Home")); //add the home tab
+            tabControl_openFiles.SelectedIndex = tabControl_openFiles.Controls.Count - 1; //focus the added tab
+        }
+
     }
 }
