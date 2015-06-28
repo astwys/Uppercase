@@ -55,6 +55,8 @@ namespace _20150625_Uppercase {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_headerTreeView = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tabControl_openFiles = new _20150625_Uppercase.Up_TabControl();
+            this.uptab_welcome = new _20150625_Uppercase.Up_Tab();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -64,8 +66,6 @@ namespace _20150625_Uppercase {
             this.button1 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.tabControl_openFiles = new _20150625_Uppercase.Up_TabControl();
-            this.uptab_welcome = new _20150625_Uppercase.Up_Tab();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -73,8 +73,8 @@ namespace _20150625_Uppercase {
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tabControl_openFiles.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -271,8 +271,38 @@ namespace _20150625_Uppercase {
             this.treeView1.Size = new System.Drawing.Size(400, 445);
             this.treeView1.TabIndex = 5;
             // 
+            // tabControl_openFiles
+            // 
+            this.tabControl_openFiles.AllowDrop = true;
+            this.tabControl_openFiles.Controls.Add(this.uptab_welcome);
+            this.tabControl_openFiles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl_openFiles.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tabControl_openFiles.Location = new System.Drawing.Point(0, 0);
+            this.tabControl_openFiles.Multiline = true;
+            this.tabControl_openFiles.Name = "tabControl_openFiles";
+            this.tabControl_openFiles.Padding = new System.Drawing.Point(10, 3);
+            this.tabControl_openFiles.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabControl_openFiles.SelectedIndex = 0;
+            this.tabControl_openFiles.Size = new System.Drawing.Size(798, 467);
+            this.tabControl_openFiles.TabIndex = 3;
+            this.tabControl_openFiles.TabStop = false;
+            // 
+            // uptab_welcome
+            // 
+            this.uptab_welcome.Location = new System.Drawing.Point(4, 22);
+            this.uptab_welcome.Name = "uptab_welcome";
+            this.uptab_welcome.Size = new System.Drawing.Size(790, 441);
+            this.uptab_welcome.TabIndex = 0;
+            this.uptab_welcome.Text = "Welcome";
+            this.uptab_welcome.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tableLayoutPanel1.AutoScroll = true;
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.SlateGray;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -283,6 +313,8 @@ namespace _20150625_Uppercase {
             this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 27);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(50, 467);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -441,31 +473,6 @@ namespace _20150625_Uppercase {
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // tabControl_openFiles
-            // 
-            this.tabControl_openFiles.AllowDrop = true;
-            this.tabControl_openFiles.Controls.Add(this.uptab_welcome);
-            this.tabControl_openFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl_openFiles.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabControl_openFiles.Location = new System.Drawing.Point(0, 0);
-            this.tabControl_openFiles.Multiline = true;
-            this.tabControl_openFiles.Name = "tabControl_openFiles";
-            this.tabControl_openFiles.Padding = new System.Drawing.Point(10, 3);
-            this.tabControl_openFiles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabControl_openFiles.SelectedIndex = 0;
-            this.tabControl_openFiles.Size = new System.Drawing.Size(798, 467);
-            this.tabControl_openFiles.TabIndex = 3;
-            this.tabControl_openFiles.TabStop = false;
-            // 
-            // uptab_welcome
-            // 
-            this.uptab_welcome.Location = new System.Drawing.Point(4, 22);
-            this.uptab_welcome.Name = "uptab_welcome";
-            this.uptab_welcome.Size = new System.Drawing.Size(790, 441);
-            this.uptab_welcome.TabIndex = 0;
-            this.uptab_welcome.Text = "Welcome";
-            this.uptab_welcome.UseVisualStyleBackColor = true;
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -479,6 +486,7 @@ namespace _20150625_Uppercase {
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimumSize = new System.Drawing.Size(800, 566);
             this.Name = "MainWindow";
             this.Text = "Uppercase";
             this.menuStrip1.ResumeLayout(false);
@@ -491,8 +499,8 @@ namespace _20150625_Uppercase {
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tabControl_openFiles.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -626,7 +634,7 @@ namespace _20150625_Uppercase {
             //this.tf_file.Size = new Size(931, 352);
             this.tf_file.WordWrap = false;
             this.tf_file.BackColor = Color.FromName("LightSlateGray");
-            this.tf_file.Cursor = Cursors.IBeam;
+            //this.tf_file.Cursor = new Cursor("../../assets/cursor/cursor.cur");
 
             this.Controls.Add(tf_file);
         }
